@@ -1,0 +1,522 @@
+/************************************
+
+  Table of Contents: 
+  (Search by number w/ period to quickly jump to any section)
+  
+  1. Laptop Screens: 1366x768 (short screen height)
+  2. Small devices: Portrait Mode 
+  3. Small devices: Landscape Mode
+
+**************************************/
+
+/*** 1. Laptop 1366x768 or smaller ***/
+
+@media (max-height: 770px){
+  .start-page{
+  position:relative;
+  width:100%;
+  height:100%;
+  z-index:10;
+  background:url('../img/background/fir-background-darkened.jpg') #007C00 bottom center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  .start-page hr{
+    color: white;
+    margin-top:30px;
+    background-color: white;
+    height: 1px;
+    width:106px;
+    border:0;
+  }
+  .start-page .opacity{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(51,51,51,0.5); /* Standard Off */
+  }
+  .start-page .content{
+    position:relative;
+    width:700px;
+    margin:0 auto;
+    height:100%;
+  }
+  .start-page .content .text{
+    position:absolute;
+    text-align: center;
+    margin: 50px auto 0;
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0;
+    width:700px;
+    height:100vh;
+  }
+  .start-page .content .text .logo{
+    width:200px;
+    height:136px;
+    margin:0px auto 40px;
+    
+  }
+  .start-page .content .text .read-more{
+    width:183px;
+    height:47px;
+    margin:50px auto;
+    line-height:47px;
+    border:1px solid white;
+    text-transform:uppercase;
+    color:white;
+    display:block;
+    cursor:pointer;
+    font-size:14px;
+    letter-spacing:1px;
+    background:none;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -ms-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+  }
+  .start-page .content .text .read-more:hover{
+    color:white;
+    background: #009E00;
+    border:1px solid #b2bec3;
+  }
+  .start-page .content .arrow-down{
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -10px;
+    width: 21px;
+    height: 29px;
+    background: url(../img/arrow-down.png) no-repeat center center;
+    display: block;
+    -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
+    -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
+    -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
+     animation:        bounce-fade 1.2s infinite; /* IE 10+ */
+  }
+  @-webkit-keyframes bounce-fade {
+      0%   { opacity: 0; bottom: 50px; }
+      100% { opacity: 1; bottom: 5px; }
+  }
+  @-moz-keyframes bounce-fade {
+      0%   { opacity: 0; bottom: 50px; }
+      100% { opacity: 1; bottom: 5px; }
+  }
+  @-o-keyframes bounce-fade {
+      0%   { opacity: 0; bottom: 50px; }
+      100% { opacity: 1; bottom: 5px; }
+  }
+  @keyframes bounce-fade {
+      0%   { opacity: 0; bottom: 50px; }
+      100% { opacity: 1; bottom: 5px; }
+  }
+} 
+
+
+/*** 2. Small devices: Portrait Mode ***/
+@media (max-width: 576px) {
+  html, body{
+    position: relative;
+    overflow: auto;
+  }
+  /* Menu */
+  .menu{
+    display:none;
+  }
+  .menu-media{
+    display:block;
+  }
+  /* Start of Page Hero Section */
+  .start-page .content {
+    width:90vw;
+    height:100vh;
+  }
+  .start-page, .start-page .opacity{
+    height:100%;
+  }
+  .start-page .content .text {
+    width:70vw;
+  }
+  .start-page .content .text h1 {
+    font-size:2.3rem;
+  }
+  .start-page .content .text p{
+    width:60vw;
+    margin: 5vh auto;
+    font-size:1.3rem;
+  }
+  /* About Section */
+  .about-us h1{
+    margin-top:0;
+  }
+
+  .about-me .content{
+    width: 87vw;
+  }
+  .about-me .content p.title{
+    font-size: 1.4rem;
+    width: 80vw;
+  }
+  .about-me hr,.portfolio .portfolio-margin hr, .contact hr {
+    width:106px;
+  }
+  .about-me .about-icons{
+    width: 300px;
+    margin: auto;
+  }
+  .about-me .about-icons p{
+    font-size: 1.2rem;
+  }
+
+  .about-me .column-one, .about-me .column-two{
+    width:300px;
+    margin-bottom:20px;
+  }
+
+   .about-me .content .column-three{
+    width:300px;
+    margin-bottom:70px;
+   }
+  
+  /* Tech Skills Section */
+  .tech-skills{
+    height: 800px;
+    width: 100vw;
+    overflow: visible;
+    background: #333;
+  }
+  .tech-skills .opacity{
+    height: 100%;
+  }
+  .tech-skills .content{
+    width:84vw;
+    height: 100%;
+    padding-top: 5vh;
+    margin: 10vh auto;
+    padding-bottom: 50px;
+  }
+  .tech-skills hr{
+    margin: 5px 0;
+  }
+  .tech-skills__desktop{
+    display: none;
+  }
+  .tech-skills__mobile{
+    display:block;
+    width:70vw;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1vh;
+  }
+
+/*** Portfolio Section ***/
+  .portfolio .portfolio-margin{
+    width:285px;
+  }
+  .portfolio .portfolio-margin h1{
+    margin-top: 60px;
+  }
+  .grid li{
+    margin:0 0 30px 0;
+  }
+  .grid .text{
+    opacity:0.8;
+  }
+  .grid .no-text{
+    opacity:0.8;
+  }
+  .grid p{
+    font-size: 1.7rem;
+  }
+  .grid p.description{
+    font-size: 1.2rem;
+  }
+
+  /* Contact Form */
+  .contact{ 
+    width:300px;
+    margin:0 auto;
+    height: auto;
+  }
+  .contact h1{
+    margin-top:60px;
+  }
+  .contact .content, .contact .content .form{
+    width:300px;
+    display: block;
+  }
+  .contact .content .contact-text{
+    padding-left:0px;
+    width:300px;
+    text-align:center;
+    margin-top:60px;
+  }
+  .content input{
+    width: 280px;
+    margin: 0 auto 10px;
+  }
+  textarea{
+    width: 280px;
+  }
+  .contact .content .contact-text {
+    width:300px;
+  }
+  .contact .content .form .column-1, .contact .content .form .column-3{
+    width:300px;
+  }
+  .contact .content .form .column-2{
+    width:300px;
+    padding-left:0;
+  }
+  .contact-text{
+    display: block;
+  }
+  .contact-text span{
+    font-size: 1.25rem;
+  }
+  .social-links{
+    width: 300px;
+  }
+  .social-links li{
+    margin: 20px auto;
+  }
+  
+  .social-links a{
+    font-size: 2.5rem;
+  }
+
+  /* Footer */
+  .footer{
+    z-index: 1;
+  }
+  .footer .menu-footer a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 0px;
+  }
+}
+
+/*** 3. Small devices: Landscape Mode ***/
+@media (min-width: 577px) and (max-width: 897px) {
+  html, body{
+    position: relative;
+    overflow: auto;
+  }
+  /*Start of Page*/
+  .start-page .content{
+    width: 100vw; 
+    height:100vh;
+  }
+  .start-page .content .text{
+    margin: 10vh auto 0;
+    height:100vh;
+    width: 90vw;
+  }
+  .start-page .content .text hr{
+    margin: 3vh auto 3vh;
+  }
+  .start-page .content .text p{
+    width: 90vw;
+    font-size: 1.3rem;
+    margin: 0 auto 5vh;
+  }
+  .start-page .content .text .logo{
+    width:50vw;
+    height:30vh;
+    margin: 10px auto 0px;
+  }
+  .start-page .content .text .logo img{
+    width: ;
+    height: 25vh;
+  }
+  .start-page .content .text .read-more{
+  width:183px;
+  height:47px;
+  margin:3vh auto;
+  cursor:pointer;
+  }
+  @-webkit-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 5vh; }
+    100% { opacity: 1; bottom: 1vh; }
+  }
+  @-moz-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 5vh; }
+    100% { opacity: 1; bottom: 1vh; }
+  }
+  @-o-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 5vh; }
+    100% { opacity: 1; bottom: 1vh; }
+  }
+  @keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 5vh; }
+    100% { opacity: 1; bottom: 1vh; }
+  }
+  /*End Start of Page*/
+
+  /*Menu Section*/
+  .menu{
+    display:none;
+  }
+  .menu-media{
+    display:block;
+  }
+  /*End of Menu Section*/
+  
+  /*About Section*/
+  .about-me .content{
+    width: 87vw;
+  }
+  .about-me .content p.title{
+    font-size: 1.4rem;
+    width: 80vw;
+  }
+  .about-me .about-icons{
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .about-me .column-one, .about-me .column-two{
+    width:70vw;
+    margin-bottom:0;
+  }
+  .about-me .content .column-three{
+    width:70vw;
+    margin-bottom:0;
+  }
+  .about-me .about-icons h2{
+    margin-top: 5vh;
+  }
+  .about-me .about-icons p{
+    width: 60vw;
+    font-size: 1.2rem;
+  } 
+  /*End of About Section*/
+
+  /*Technical Skills Section*/
+  .tech-skills{
+    height: 80vmax;
+    width: 100vw;
+    overflow: scroll;
+    background: #333;
+  }
+  .tech-skills__desktop{
+    display: none;
+  }
+  .tech-skills__mobile{
+    display:block;
+    width:70vw;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1vh;
+  }
+  .tech-skills .content{
+    margin: 0 auto;
+    padding-top: 10vh; 
+    width:100vw;
+    height: 100%;
+  }
+  .tech-skills .opacity{
+    height: 110%;
+  }
+  /*End of Tech Skills*/
+
+  /*Portfolio Section*/
+  .portfolio .portfolio-margin{
+      width:600px;
+  }
+  .portfolio .portfolio-margin h1{
+    margin-top: 15vh;
+  }
+  .grid{
+    margin-top:15vh;
+  }
+  .grid li{
+    width:285px;
+    margin:0 15px 15px 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .grid .text{
+    opacity:0.8;
+  }
+  .grid .no-text{
+    opacity:0.8;
+  }
+  .grid p{
+    font-size: 1.7rem;
+  }
+  .grid p.description{
+    font-size: 1.2rem;
+  }
+  /*End of Portfolio*/
+
+  /* Contact Form */
+  .contact{ 
+    width:300px;
+    margin:0 auto;
+    height: auto;
+  }
+  .contact h1{
+    margin-top:60px;
+  }
+  .contact .content, .contact .content .form{
+    width:300px;
+    display: block;
+  }
+  .contact .content .contact-text{
+    padding-left:0px;
+    width:300px;
+    text-align:center;
+    margin-top:60px;
+  }
+  .content input{
+    width: 280px;
+    margin: 0 auto 10px;
+  }
+  textarea{
+    width: 280px;
+  }
+  .contact .content .contact-text {
+    width:300px;
+  }
+  .contact .content .form .column-1, .contact .content .form .column-3{
+    width:300px;
+  }
+  .contact .content .form .column-2{
+    width:300px;
+    padding-left:0;
+  }
+  .contact-text{
+    display: block;
+  }
+  .contact-text span{
+    font-size: 1.25rem;
+  }
+  .social-links{
+    width: 300px;
+  }
+  .social-links li{
+    margin: 20px auto;
+  }
+  
+  .social-links a{
+    font-size: 2.5rem;
+  }
+  /* End of Contact Form */
+
+  /* Footer */
+  .footer{
+    z-index: 1;
+  }
+  .footer .menu-footer a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 0px;
+  }
+}
