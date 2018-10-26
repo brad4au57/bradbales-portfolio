@@ -741,6 +741,46 @@ h1 span{
   float:left;
 }
 
+.contact .content .form-success{
+  display: none;
+  width:455px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+  margin-top: 10vh;
+}
+
+.contact .content .form-success p{
+  font-size: 1.5em;
+  color: black;
+  margin: 0;
+  height: 2em;
+}
+
+.contact .content .form-success p:first-child{
+  margin: 3em auto 0;
+}
+
+.contact .content .form-error{
+  display: none;
+  width:455px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+  margin-top: 10vh;
+}
+
+.contact .content .form-error p{
+  font-size: 1.5em;
+  color: black;
+  margin: 0;
+  height: 2em;
+}
+
+.contact .content .form-error p:first-child{
+  margin: 3em auto 0;
+}
+
 .contact .content .form .column-1{
   width:180px;
   overflow:hidden;

@@ -320,8 +320,9 @@
     <h1>Contact</h1>
     <hr/>        
     <div class="content">        
-      <div class="form" id="contact-form">
-        <form action="mail.php" name="sendEmail" method="POST">
+      <!-- Contact Form -->
+      <div class="form" method="POST" id="contact-form">
+        <form name="sendEmail">
           <div class="column-1">
             <label for="name" class="form-label">YOUR NAME:</label><br/><br/>
             <input name="name" id="name" value="" required/>
@@ -342,7 +343,17 @@
           </div> 
         </form> 
       </div>
-
+	  <!-- Form Success -->
+      <div class="form-success">
+      	<p>Thank you for contacting me</p>
+      	<p>Your message is on it's way!</p>
+      </div>
+	  <!-- Form Error -->
+	  <div class="form-error">
+	  	<p>Oh No! Something went wrong</p>
+      	<p>Please reload the page and try again!</p>
+	  </div>
+	  <!-- Form Contact Text -->
       <div class="contact-text">
         <span>To contact me please use the form provided<br/>
               OR <br/>
@@ -389,7 +400,7 @@
 	<script src="js/masonry.pkgd.min.js"></script> <!-- All script -->
 	<script src="js/imagesloaded.pkgd.min.js"></script> <!-- All script -->	
 
-   <script>
+    <script>
      $(function(){
    
        var $container = $('.grid');
@@ -401,9 +412,10 @@
        });
      
      });
-   </script>
-  <script src="js/parallax.min.js"></script> <!-- jQuery Parallax -->
+    </script>
+    <script src="js/parallax.min.js"></script> <!-- jQuery Parallax -->
 	<script src="js/script.js"></script> <!-- All script -->	
+	<script src="js/contact.js"></script> <!-- Contact Form script -->
 </body>
 
 </html>
